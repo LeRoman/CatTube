@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    border-bottom: 1px;
+    border-bottom-style: ridge;
+    border-color: rgb(177, 162, 162);
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+
+.logo img{
+    height: 40px;
+}
+
+.search-boxx{
+    display: flex;
+    justify-content: center; 
+    width: 33%;
+   
+}
+
+.search-boxx input{
+    margin: -1px;
+}
+.search-btn{
+    width: 20px;
+    height: max-content;
+    padding: 0px;
+   
+}
+
+.microphone-btn{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    opacity: 1;
+}
+
+.microphone-btn img{
+    height: 10px;
+}
+
+.search-btn img{
+    height: 10px;
+}
+
+.logo strong{
+    color: rgb(207, 135, 2);
+    font-size: x-large;
+}
+
+.profile-buttons{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
