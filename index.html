@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/header.css">
     <title>CatTube</title>
 </head>
+
 <body>
-    
-        <header >
-            <div class="logo">
-                <img  src="./assets/img/cat.png" alt="catlogo" >
-                <strong> Cat Tube</strong>
-            </div>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/cat.png" alt="catlogo">
+            <strong> Cat Tube</strong>
+        </div>
 
-            <div class="search-boxx">
+        <div class="search-boxx">
 
-                <input type="search"  placeholder="Search" >
+            <input type="search" placeholder="Search">
             </input>
 
             <button class="search-btn">
-                <img src="./assets/img/loupe.png" alt="search">   
-             </button>
-             <button class="microphone-btn">
-                <img src="./assets/img/microphone.png" alt="microphone">   
-             </button>
-            </div>
+                <img src="./assets/img/loupe.png" alt="search">
+            </button>
+            <button class="microphone-btn">
+                <img src="./assets/img/microphone.png" alt="microphone">
+            </button>
+        </div>
 
-            <div class="profile-buttons">
-                <button class="search-btn">
-                    <img src="./assets/img/bell.png" alt="Notifications">   
+        <div class="profile-buttons">
+            <button class="notifications-btn">
+                <img src="./assets/img/bell.png" alt="Notifications">
+            </button>
+            <div class="dropdown">
+                <button class="profile-btn">
+                    <img src="./assets/img/cat-footprint.png" alt="Profile">
                 </button>
-                
-                <button class="search-btn">
-                    <img src="./assets/img/cat-footprint.png" alt="Profile">   
-                 </button>
-
+                <div class="dropdown-content">
+                    <a href="#">
+                        <img src="./assets/img/paw-solid.svg" alt="">Profile</a>
+                    <a href="#">
+                        <img src="./assets/img/gear-solid.svg" alt="">Settings</a>
+                    <a href="#" class="log-out" >
+                        <img src="./assets/img/right-from-bracket-solid.svg" alt="2">Log Out</a>
+                </div>
             </div>
-        </header>
-    
+
+        </div>
+
+    </header>
+    <div class="shadow"></div>
+
+
 </body>
+
 </html>
