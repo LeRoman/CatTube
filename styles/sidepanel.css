@@ -1,0 +1,14 @@
+.side-panel {
+    
+    display: flex;
+    position: relative;
+    background-color: rgb(250, 247, 243);
+    width: 200px;
+    height: 80vh;
+    padding: 10px;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+}
