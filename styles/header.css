@@ -45,6 +45,7 @@ header {
 }
 
 .search-boxx input {
+    display: flex;
     min-width: 100px;
     width: 250px;
     border-color: black;
@@ -56,10 +57,10 @@ header {
 }
 
 .search-btn {
-    min-width: 20px;
+    width: 20px;
     padding: 4px;
     border-width: 1px;
-    border-left: #e4dfdf;
+    border-left: none;
     border-radius: 0px 4px 4px 0px;
     display: flex;
 }
@@ -68,6 +69,8 @@ header {
     padding: 0px;
     border: 0;
     background: none;
+    display: flex;
+    width: 20px;
 }
 
 .microphone-btn img {
@@ -142,7 +145,7 @@ header {
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     margin: 2px;
     border-radius: 5px;
     position: absolute;
@@ -173,10 +176,11 @@ header {
     padding-right: 8px;
 }
 
-.log-out {
+.dropdown-content .log-out {
     border-top: solid;
     border-width: 1px;
     border-color: grey;
+    color: red;
 }
 
 .log-out img {

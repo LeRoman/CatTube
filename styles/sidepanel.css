@@ -1,14 +1,76 @@
 .side-panel {
-    
-    display: flex;
-    position: relative;
-    background-color: rgb(250, 247, 243);
-    width: 200px;
-    height: 80vh;
-    padding: 10px;
+    display: grid;
+    grid-template-rows: 5fr 2fr;
+    flex-direction: row;
+    position: fixed;
+    width: 203px;
+    height: 100vh;
     z-index: 1;
 }
 
 main {
     display: flex;
+}
+
+.streamers-block {
+    background-color: #f2f1ef;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 7px 5px 7px 5px;
+}
+
+.information-block {
+    margin-top: 3px;
+    background-color: #f2f1ef;
+    height: 100%;
+    width: 100%;
+}
+
+.streamer {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    max-height: 50px;
+    align-items: center;
+}
+
+.streamer img {
+    height: 3rem;
+    grid-column: 1;
+}
+
+.streamer-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.streamer-name {
+    grid-column: 1;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.viewers {
+    grid-column: 2;
+    color: #7a7a7a;
+    white-space: nowrap;
+}
+
+.viewers::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+    justify-self: end;
+    white-space: nowrap;
 }
