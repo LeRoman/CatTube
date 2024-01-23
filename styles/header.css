@@ -1,0 +1,188 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 2;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shadow {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #d3c8c8;
+    height: 2px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    z-index: 45;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+
+.logo strong {
+    color: rgb(207, 135, 2);
+    font-size: xx-large;
+
+}
+
+.logo img {
+    height: 60px;
+}
+
+.search-boxx {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    height: 60%;
+}
+
+.search-boxx input {
+    display: flex;
+    min-width: 100px;
+    width: 250px;
+    border-color: black;
+    border-radius: 4px 0 0 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: small;
+    z-index: 1;
+}
+
+.search-btn {
+    width: 20px;
+    padding: 4px;
+    border-width: 1px;
+    border-left: none;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+}
+
+.microphone-btn {
+    padding: 0px;
+    border: 0;
+    background: none;
+    display: flex;
+    width: 20px;
+}
+
+.microphone-btn img {
+    height: 80%;
+    filter: brightness(0.9);
+}
+
+.microphone-btn img:hover,
+.notifications-btn img:hover {
+    filter: brightness(0.3);
+}
+
+.search-btn img {
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.profile-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.notifications-btn {
+    background: none;
+    height: 50%;
+    padding: 0;
+    border: none;
+    margin-right: 7px;
+}
+
+.notifications-btn img {
+    height: 100%;
+    filter: grayscale();
+}
+
+.profile-btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    padding: 0%;
+    background-color: orange;
+}
+
+.profile-btn img {
+    filter: brightness(0.3);
+    height: 40%;
+}
+
+.logo img,
+.logo strong,
+.microphone-btn,
+.notifications-btn,
+.profile-btn,
+.search-btn {
+    cursor: pointer;
+}
+
+.search-boxx input:focus {
+    outline-color: blue;
+    outline-style: solid;
+    outline-offset: -1px;
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    margin: 2px;
+    border-radius: 5px;
+    position: absolute;
+    right: 25px;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dropdown-content img {
+    align-self: center;
+    padding-right: 8px;
+}
+
+.dropdown-content .log-out {
+    border-top: solid;
+    border-width: 1px;
+    border-color: grey;
+    color: red;
+}
+
+.log-out img {
+    filter: invert(9%) sepia(100%) saturate(7150%) hue-rotate(1deg) brightness(100%) contrast(92%);
+}
