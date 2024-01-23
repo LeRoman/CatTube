@@ -1,15 +1,15 @@
-.side-panel {
-    display: grid;
-    grid-template-rows: 5fr 2fr;
-    flex-direction: row;
-    position: fixed;
-    width: 203px;
-    height: 100vh;
-    z-index: 1;
-}
-
 main {
     display: flex;
+}
+
+.side-panel {
+    display: grid;
+    grid-template-rows: 7fr 2fr;
+    flex-direction: row;
+    position: fixed;
+    width: 250px;
+    height: 90vh;
+    z-index: 1;
 }
 
 .streamers-block {
@@ -24,12 +24,42 @@ main {
 }
 
 .information-block {
-    margin-top: 3px;
+    margin-top: 1px;
     background-color: #f2f1ef;
     height: 100%;
     width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr;
+    padding: 20px;
 }
 
+.information-block img{
+    height: 2em;
+    fill: aliceblue;
+}
+
+.information-block link:hover{filter:brightness(0.3) ;
+}
+
+.contacts{
+    background-color: #e1dfdc;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contacts span{
+    font-size: x-large;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    grid-row: 1;
+}
+
+.contacts span::selection{
+    color: #ffffff;
+    background-color: orange;
+}
 .streamer {
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -73,4 +103,11 @@ main {
     margin-right: 3px;
     justify-self: end;
     white-space: nowrap;
+}
+
+.references{
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    grid-row: 2;
 }
